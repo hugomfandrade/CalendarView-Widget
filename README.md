@@ -10,12 +10,12 @@ An Android app was developed to show a few use-cases of the this widget and it c
 
 ## Screenshots
 
-![](https://github.com/hugomfandrade/CalendarView-Widget/blob/master/art/CalendarView_default.gif?raw=true)
+![](https://github.com/hugomfandrade/CalendarView-Widget/blob/master/art/CalendarView_default.gif?raw=true | width=50)
 
-![](https://github.com/hugomfandrade/CalendarView-Widget/blob/master/art/CalendarView_mini_popup.gif?raw=true)
+![](https://github.com/hugomfandrade/CalendarView-Widget/blob/master/art/CalendarView_mini_popup.gif?raw=true | width=50)
 
-![](https://github.com/hugomfandrade/CalendarView-Widget/blob/master/art/CalendarView_with_notes.gif?raw=true)
+![](https://github.com/hugomfandrade/CalendarView-Widget/blob/master/art/CalendarView_with_notes.gif?raw=true | width=50)
 
-![](https://github.com/hugomfandrade/CalendarView-Widget/blob/master/art/CalendarView_toolbar.gif?raw=true)
+![](https://github.com/hugomfandrade/CalendarView-Widget/blob/master/art/CalendarView_toolbar.gif?raw=true | width=50)
 
 ## XML Attributes
