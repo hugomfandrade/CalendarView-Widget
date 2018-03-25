@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SelectedTextView">
+        <attr name="enable" format="boolean" />
+        <attr name="selected_color" format="color" />
+        <attr name="selected_padding" format="dimension" />
+        <attr name="selected_padding_top" format="dimension"/>
+        <attr name="selected_padding_end" format="dimension"/>
+        <attr name="selected_padding_start" format="dimension"/>
+        <attr name="selected_padding_bottom" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="MultipleTriangleView">
+        <attr name="mtr_direction" format="enum">
+            <enum name="top_left" value="0"/>
+            <enum name="top_right" value="1"/>
+            <enum name="bottom_left" value="2"/>
+            <enum name="bottom_right" value="3"/>
+        </attr>
+        <attr name="mtr_separator_width" format="dimension"/>
+        <attr name="mtr_view_direction" format="enum">
+            <enum name="vertical" value="0"/>
+            <enum name="horizontal" value="1"/>
+        </attr>
+        <attr name="mtr_color" format="color"/>
+        <attr name="mtr_background_color" format="color"/>
+        <attr name="mtr_number_of_items" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="FrameLinearLayout">
+        <attr name="frame_color" format="color" />
+        <attr name="frame_width" format="dimension"/>
+        <attr name="frame_width_top" format="dimension"/>
+        <attr name="frame_width_bottom" format="dimension"/>
+        <attr name="frame_width_end" format="dimension"/>
+        <attr name="frame_width_start" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="CalendarView">
+        <attr name="content_background_color" format="color" />
+        <attr name="month_header_background_color" format="color"/>
+        <attr name="month_header_text_color" format="color"/>
+        <attr name="month_header_arrows_color" format="color" />
+        <attr name="month_header_show" format="boolean" />
+        <attr name="week_header_background_color" format="color"/>
+        <attr name="week_header_text_color" format="color" />
+        <attr name="week_header_offset_day_background_color" format="color" />
+        <attr name="week_header_offset_day_text_color" format="color" />
+        <attr name="week_header_movable" format="boolean" />
+        <attr name="day_text_color" format="color" />
+        <attr name="day_background_color" format="color" />
+        <attr name="offset_day_text_color" format="color" />
+        <attr name="offset_day_background_color" format="color" />
+        <attr name="current_day_text_color" format="color" />
+        <attr name="current_day_background_color" format="color" />
+        <attr name="current_day_text_style" format="enum">
+            <enum name="bold" value="1" />
+            <enum name="normal" value="0" />
+        </attr>
+        <attr name="current_day_circle_enable" format="boolean" />
+        <attr name="current_day_circle_color" format="color" />
+        <attr name="selected_day_text_color" format="color" />
+        <attr name="selected_day_background_color" format="color"/>
+        <attr name="selected_day_border_color" format="color" />
+        <attr name="offset_day" format="enum" >
+            <enum name="Sunday" value="1" />
+            <enum name="Monday" value="2" />
+            <enum name="Tuesday" value="3" />
+            <enum name="Wednesday" value="4" />
+            <enum name="Thursday" value="5" />
+            <enum name="Friday" value="6" />
+            <enum name="Saturday" value="7" />
+        </attr>
+        <attr name="starting_weekday" format="enum">
+            <enum name="Sunday" value="1" />
+            <enum name="Monday" value="2" />
+            <enum name="Tuesday" value="3" />
+            <enum name="Wednesday" value="4" />
+            <enum name="Thursday" value="5" />
+            <enum name="Friday" value="6" />
+            <enum name="Saturday" value="7" />
+        </attr>
+    </declare-styleable>
+
+</resources>

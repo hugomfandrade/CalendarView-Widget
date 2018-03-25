@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <view
+        android:id="@+id/view_pager"
+        class="org.hugoandrade.calendarviewlib.CalendarView$CalendarViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/ib_previous_month"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:padding="10dp"
+        android:background="#0fff"
+        android:src="@drawable/ic_chevron_start"
+        android:contentDescription="@string/previous_month"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/tv_weekday_7"
+        />
+
+    <ImageButton
+        android:id="@+id/ib_next_month"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:padding="10dp"
+        android:background="#0fff"
+        android:contentDescription="@string/next_month"
+        android:src="@drawable/ic_chevron_end"
+
+        app:layout_constraintBottom_toTopOf="@+id/tv_weekday_7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_weekday_1"
+        style="@style/weekdayTextView"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tv_weekday_2"
+        app:layout_constraintTop_toTopOf="@+id/tv_weekday_2"
+        app:layout_constraintHorizontal_chainStyle="spread"/>
+
+    <TextView
+        android:id="@+id/tv_weekday_2"
+        style="@style/weekdayTextView"
+
+        app:layout_constraintStart_toEndOf="@+id/tv_weekday_1"
+        app:layout_constraintEnd_toStartOf="@+id/tv_weekday_3"
+        app:layout_constraintTop_toTopOf="@+id/tv_weekday_3"
+        app:layout_constraintHorizontal_chainStyle="spread" />
+
+    <TextView
+        android:id="@+id/tv_weekday_3"
+        style="@style/weekdayTextView"
+
+        app:layout_constraintStart_toEndOf="@+id/tv_weekday_2"
+        app:layout_constraintEnd_toStartOf="@+id/tv_weekday_4"
+        app:layout_constraintTop_toTopOf="@+id/tv_weekday_4"
+        app:layout_constraintHorizontal_chainStyle="spread"/>
+
+    <TextView
+        android:id="@+id/tv_weekday_4"
+        style="@style/weekdayTextView"
+
+        app:layout_constraintStart_toEndOf="@+id/tv_weekday_3"
+        app:layout_constraintEnd_toStartOf="@+id/tv_weekday_5"
+        app:layout_constraintTop_toTopOf="@+id/tv_weekday_5"
+        app:layout_constraintHorizontal_chainStyle="spread"/>
+
+    <TextView
+        android:id="@+id/tv_weekday_5"
+        style="@style/weekdayTextView"
+
+        app:layout_constraintStart_toEndOf="@+id/tv_weekday_4"
+        app:layout_constraintEnd_toStartOf="@+id/tv_weekday_6"
+        app:layout_constraintTop_toTopOf="@+id/tv_weekday_6"
+        app:layout_constraintHorizontal_chainStyle="spread"/>
+
+    <TextView
+        android:id="@+id/tv_weekday_6"
+        style="@style/weekdayTextView"
+
+        app:layout_constraintStart_toEndOf="@+id/tv_weekday_5"
+        app:layout_constraintEnd_toStartOf="@+id/tv_weekday_7"
+        app:layout_constraintTop_toTopOf="@+id/tv_weekday_7"
+        app:layout_constraintHorizontal_chainStyle="spread"/>
+
+    <TextView
+        android:id="@+id/tv_weekday_7"
+        style="@style/weekdayTextView"
+
+        app:layout_constraintStart_toEndOf="@+id/tv_weekday_6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ib_next_month"
+        app:layout_constraintHorizontal_chainStyle="spread"/>
+
+</android.support.constraint.ConstraintLayout>
