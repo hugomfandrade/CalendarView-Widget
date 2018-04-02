@@ -12,11 +12,9 @@ An Android app was developed to show a few use-cases of the this widget and it c
 
 ![](https://github.com/hugomfandrade/CalendarView-Widget/blob/master/art/CalendarView_default.gif)
 
-![](https://github.com/hugomfandrade/CalendarView-Widget/blob/master/art/CalendarView_mini_popup.gif?raw=true)
-
 ![](https://github.com/hugomfandrade/CalendarView-Widget/blob/master/art/CalendarView_toolbar.gif?raw=true)
 
-![](https://github.com/hugomfandrade/CalendarView-Widget/blob/master/art/CalendarView_with_notes.gif?raw=true)
+![](https://github.com/hugomfandrade/CalendarView-Widget/blob/master/art/CalendarView_mini_popup.gif?raw=true)
 
 ![](https://github.com/hugomfandrade/CalendarView-Widget/blob/master/art/CalendarView_with_events.gif?raw=true)
 
