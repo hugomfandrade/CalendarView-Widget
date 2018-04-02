@@ -46,6 +46,6 @@
         app:elevation="0dp"
         app:srcCompat="@android:drawable/ic_input_add" />
 
-    <include layout="@layout/create_calendar_event" />
+    <include layout="@layout/layout_create_calendar_event" />
 
 </android.support.design.widget.CoordinatorLayout>

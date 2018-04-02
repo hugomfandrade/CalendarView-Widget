@@ -45,6 +45,7 @@ import java.util.Comparator;
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;
+import java.util.Objects;
 
 @SuppressWarnings({"unused", "FieldCanBeLocal", "WeakerAccess"})
 public class CalendarView extends FrameLayout {
@@ -253,6 +254,25 @@ public class CalendarView extends FrameLayout {
         mCalendarPagerAdapter.notifyDataSetChanged();
     }
 
+    public void removeCalendarObjectByID(CalendarObject calendarObject) {
+        int dateCode = getDateCode(calendarObject.getDatetime(), 1);
+
+        List<CalendarObject> calendarObjectList = mObjectsByMonthMap.get(dateCode);
+        if (calendarObjectList != null) {
+            CalendarObject objectToRemove = null;
+            for (CalendarObject object :calendarObjectList) {
+                if (object.getID() != null && object.getID().equals(calendarObject.getID())) {
+                    objectToRemove = object;
+                    break;
+                }
+            }
+            if (objectToRemove != null) {
+                calendarObjectList.remove(objectToRemove);
+            }
+        }
+        mCalendarPagerAdapter.notifyDataSetChanged();
+    }
+
     public void setCalendarObjectList(List<CalendarObject> calendarObjectList) {
         mObjectsByMonthMap.clear();
 
@@ -360,7 +380,7 @@ public class CalendarView extends FrameLayout {
             Collections.sort(mObjectsByMonthMap.get(dateCode), new Comparator<CalendarObject>() {
                 @Override
                 public int compare(CalendarObject o1, CalendarObject o2) {
-                    return o1.getDatetime().after(o2.getDatetime())? -1 : 1;
+                    return o1.getDatetime().after(o2.getDatetime())? 1 : -1;
                 }
             });
         } else {

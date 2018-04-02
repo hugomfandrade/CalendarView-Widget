@@ -29,7 +29,6 @@
         </activity>
         <activity
             android:name=".ToolbarCalendarViewActivity"
-            android:label="@string/title_activity_toolbar_calendar_view"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".MiniCalendarViewPopupActivity"
@@ -42,12 +41,35 @@
         </activity>
         <activity
             android:name=".CalendarViewWithNotesActivity"
-            android:label="@string/title_activity_calendar_view_with_notes"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="org.hugoandrade.calendarviewapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".CalendarViewWithNotesActivitySDK21"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.hugoandrade.calendarviewapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".CreateEventActivity"
+            android:parentActivityName=".CalendarViewWithNotesActivitySDK21"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.hugoandrade.calendarviewapp.CalendarViewWithNotesActivitySDK21" />
+        </activity>
+        <activity
+            android:name=".SelectDateAndTimeActivity"
+            android:parentActivityName=".CreateEventActivity"
+            android:theme="@style/AppTheme.NoActionBar.Transition">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.hugoandrade.calendarviewapp.CreateEventActivity" />
         </activity>
     </application>
 

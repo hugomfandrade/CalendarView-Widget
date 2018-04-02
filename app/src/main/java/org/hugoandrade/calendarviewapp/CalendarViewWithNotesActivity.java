@@ -30,7 +30,7 @@ public class CalendarViewWithNotesActivity extends AppCompatActivity {
 
     private String[] mShortMonths;
     private CalendarView mCalendarView;
-    private OptionsAdapter mAdapter;
+    private OptionsAdapter mOptionsAdapter;
 
     public static Intent makeIntent(Context context) {
         return new Intent(context, CalendarViewWithNotesActivity.class);
@@ -102,7 +102,7 @@ public class CalendarViewWithNotesActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 hideUnitSelector();
-                addEventToCalendarView(mAdapter.getSelectedColor());
+                addEventToCalendarView(mOptionsAdapter.getSelectedColor());
             }
         });
 
@@ -110,7 +110,7 @@ public class CalendarViewWithNotesActivity extends AppCompatActivity {
         rvColors.setHasFixedSize(true);
         rvColors.setLayoutManager(new GridLayoutManager(this, 6,  LinearLayoutManager.VERTICAL, false));
 
-        mAdapter = new OptionsAdapter(
+        mOptionsAdapter = new OptionsAdapter(
                 Color.rgb(159, 225, 231),
                 Color.rgb(220, 39, 39),
                 Color.rgb(219, 173, 255),
@@ -124,14 +124,14 @@ public class CalendarViewWithNotesActivity extends AppCompatActivity {
                 Color.rgb(255, 136, 124),
                 Color.rgb(225, 225, 225)
         );
-        mAdapter.setOnClickListener(new OptionsAdapter.OnClickListener() {
+        mOptionsAdapter.setOnClickListener(new OptionsAdapter.OnClickListener() {
             @Override
             public void onClick(int color) {
                 hideUnitSelector();
                 addEventToCalendarView(color);
             }
         });
-        rvColors.setAdapter(mAdapter);
+        rvColors.setAdapter(mOptionsAdapter);
     }
 
     private void addEventToCalendarView(int color) {
@@ -146,7 +146,7 @@ public class CalendarViewWithNotesActivity extends AppCompatActivity {
     private void showUnitSelector() {
         vCreateEventOuterContainer.setVisibility(View.VISIBLE);
 
-        mAdapter.setSelectedItem(0);
+        mOptionsAdapter.setSelectedItem(0);
 
         TranslateAnimationBuilder.instance()
                 .setFromY(vCreateEventInnerContainer.getHeight())

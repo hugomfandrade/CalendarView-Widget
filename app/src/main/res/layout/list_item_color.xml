@@ -7,11 +7,11 @@
 
     <android.support.v7.widget.CardView
         android:id="@+id/cardView_outer"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
         android:layout_margin="6dp"
         app:cardElevation="0dp"
-        app:cardCornerRadius="24dp">
+        app:cardCornerRadius="22dp">
 
         <android.support.v7.widget.CardView
             android:id="@+id/cardView_inner"

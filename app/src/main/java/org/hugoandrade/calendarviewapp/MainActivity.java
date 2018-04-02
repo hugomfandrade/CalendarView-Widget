@@ -3,6 +3,7 @@ package org.hugoandrade.calendarviewapp;
 import android.content.Context;
 import android.content.res.Configuration;
 import android.content.res.Resources;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -58,7 +59,12 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(MiniCalendarViewPopupActivity.makeIntent(context));
                         break;
                     case 3:
-                        startActivity(CalendarViewWithNotesActivity.makeIntent(context));
+                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                            startActivity(CalendarViewWithNotesActivitySDK21.makeIntent(context));
+                        }
+                        else {
+                            startActivity(CalendarViewWithNotesActivity.makeIntent(context));
+                        }
                         break;
                 }
             }

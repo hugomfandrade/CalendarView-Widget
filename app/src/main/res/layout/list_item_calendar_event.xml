@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:paddingTop="14dp"
+    android:paddingBottom="14dp"
+    android:paddingStart="24dp"
+    android:paddingEnd="24dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="?android:attr/selectableItemBackground">
+
+    <View
+        android:id="@+id/rcl_calendar_event_icon"
+        android:layout_width="4dp"
+        android:layout_height="4dp"
+        android:background="?attr/colorPrimary"
+        android:layout_marginTop="9dp"
+        />
+    
+    <Space
+        android:layout_width="13dp"
+        android:layout_height="0dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_calendar_event_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#252525"
+            android:textSize="16sp"
+            android:lines="1"
+            android:ellipsize="end"
+            tools:text="Exercise Plan" />
+
+        <TextView
+            android:id="@+id/tv_calendar_event_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#979797"
+            android:textSize="13sp"
+            android:lines="1"
+            tools:text="08:00"/>
+
+    </LinearLayout>
+
+</LinearLayout>
