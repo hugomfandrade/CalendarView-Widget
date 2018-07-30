@@ -17,10 +17,7 @@
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="spread"
-        app:layout_constraintVertical_weight="1"
-        app:layout_constraintHeight_default="wrap"
-        app:layout_constraintWidth_default="wrap" />
+        app:layout_constraintVertical_chainStyle="spread"/>
 
     <include
         android:id="@+id/day_item_1_2"
@@ -33,8 +30,7 @@
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toEndOf="@+id/day_item_1_1"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="spread"
-        app:layout_constraintWidth_default="wrap"/>
+        app:layout_constraintVertical_chainStyle="spread" />
 
     <include
         android:id="@+id/day_item_1_3"
@@ -47,8 +43,7 @@
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toEndOf="@+id/day_item_1_2"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="spread"
-        app:layout_constraintWidth_default="wrap" />
+        app:layout_constraintVertical_chainStyle="spread" />
 
     <include
         android:id="@+id/day_item_1_4"
@@ -61,8 +56,7 @@
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toEndOf="@+id/day_item_1_3"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="spread"
-        app:layout_constraintWidth_default="wrap" />
+        app:layout_constraintVertical_chainStyle="spread" />
 
     <include
         android:id="@+id/day_item_1_5"
@@ -75,8 +69,7 @@
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toEndOf="@+id/day_item_1_4"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="spread"
-        app:layout_constraintWidth_default="wrap" />
+        app:layout_constraintVertical_chainStyle="spread" />
 
     <include
         android:id="@+id/day_item_1_6"
@@ -89,8 +82,7 @@
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toEndOf="@+id/day_item_1_5"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="spread"
-        app:layout_constraintWidth_default="wrap" />
+        app:layout_constraintVertical_chainStyle="spread" />
 
     <include
         android:id="@+id/day_item_1_7"
@@ -103,8 +95,7 @@
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toEndOf="@+id/day_item_1_6"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="spread"
-        app:layout_constraintWidth_default="wrap" />
+        app:layout_constraintVertical_chainStyle="spread" />
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
@@ -119,9 +110,7 @@
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/day_item_1_1"
-        app:layout_constraintVertical_chainStyle="spread"
-        app:layout_constraintVertical_weight="1"
-        app:layout_constraintHeight_default="wrap" />
+        app:layout_constraintVertical_chainStyle="spread"/>
 
     <include
         android:id="@+id/day_item_2_2"
@@ -214,9 +203,7 @@
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/day_item_2_1"
-        app:layout_constraintVertical_chainStyle="spread"
-        app:layout_constraintVertical_weight="1"
-        app:layout_constraintHeight_default="wrap"/>
+        app:layout_constraintVertical_chainStyle="spread"/>
 
     <include
         android:id="@+id/day_item_3_2"
@@ -309,9 +296,7 @@
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/day_item_3_1"
-        app:layout_constraintVertical_chainStyle="spread"
-        app:layout_constraintVertical_weight="1"
-        app:layout_constraintHeight_default="wrap" />
+        app:layout_constraintVertical_chainStyle="spread" />
 
     <include
         android:id="@+id/day_item_4_2"
@@ -404,9 +389,7 @@
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/day_item_4_1"
-        app:layout_constraintVertical_chainStyle="spread"
-        app:layout_constraintVertical_weight="1"
-        app:layout_constraintHeight_default="wrap" />
+        app:layout_constraintVertical_chainStyle="spread" />
 
     <include
         android:id="@+id/day_item_5_2"
@@ -499,9 +482,7 @@
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/day_item_5_1"
-        app:layout_constraintVertical_chainStyle="spread"
-        app:layout_constraintVertical_weight="1"
-        app:layout_constraintHeight_default="wrap" />
+        app:layout_constraintVertical_chainStyle="spread" />
 
     <include
         android:id="@+id/day_item_6_2"
