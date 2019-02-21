@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="today">hoje</string>
+    <string name="cancel">cancelar</string>
+    <string name="ok">ok</string>
+    <string name="new_event">Novo Evento</string>
+    <string name="save">guardar</string>
+    <string name="title">Título</string>
+    <string name="completed">Completo</string>
+    <string name="set">concluído</string>
+    <string name="select_color_instruction">Seleccionar cor do evento</string>
+    <string name="event_default_title">O meu evento</string>
+    <string name="no_events">Sem eventos ou tarefas</string>
+    <string name="delete">eliminar</string>
+</resources>

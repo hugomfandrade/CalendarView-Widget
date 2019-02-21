@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name" translatable="false">CalendarView Test</string>
+    <string name="title_activity_simple_calendar_view" translatable="false">Simple CalendarView</string>
+    <string name="title_activity_mini_calendar_view_popup" translatable="false">CalendarView Popup</string>
+    <string name="today">today</string>
+    <string name="cancel">cancel</string>
+    <string name="ok">ok</string>
+    <string name="new_event">New Event</string>
+    <string name="save">save</string>
+    <string name="title">Title</string>
+    <string name="completed">Completed</string>
+    <string name="set">set</string>
+    <string name="double_dots" translatable="false">:</string>
+    <string name="select_color_instruction">Select color of event</string>
+    <string name="event_default_title">My event</string>
+    <string name="no_events">no events</string>
+    <string name="not_available">Not Available</string>
+    <string name="delete">delete</string>
+
+</resources>

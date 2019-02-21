@@ -1,0 +1,82 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="AppTheme" >
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.TitleText">
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+
+    <style name="AppTheme.SubTitleText">
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="AppTheme.TitleText.Dark" parent="AppTheme.TitleText" >
+        <item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme.SubTitleText.Dark" parent="AppTheme.SubTitleText" >
+        <item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+
+    <style name="createEventToolbarItems">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="createEventItemTextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">6.5dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="createEventIconStyle">
+        <item name="android:layout_width">18dp</item>
+        <item name="android:layout_height">18dp</item>
+        <item name="android:layout_marginTop">15.5dp</item>
+        <item name="android:layout_marginBottom">15dp</item>
+        <item name="android:layout_marginStart">8.5dp</item>
+        <item name="android:layout_marginEnd">8.5dp</item>
+        <!--<item name="android:layout_margin">8.5dp</item>-->
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:contentDescription">@string/not_available</item>
+    </style>
+
+    <style name="createEventSeparator">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">#ddd</item>
+        <item name="android:layout_marginStart">18dp</item>
+        <item name="android:layout_marginEnd">18dp</item>
+    </style>
+
+</resources>

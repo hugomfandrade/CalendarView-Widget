@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.hugoandrade.calendarviewtest">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SimpleCalendarViewActivity"
+            android:label="@string/title_activity_simple_calendar_view"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.hugoandrade.calendarviewtest.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ToolbarCalendarViewActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MiniCalendarViewPopupActivity"
+            android:label="@string/title_activity_mini_calendar_view_popup"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.hugoandrade.calendarviewtest.MainActivity" />
+        </activity>
+        <activity
+            android:name=".CalendarViewWithNotesActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.hugoandrade.calendarviewtest.MainActivity" />
+        </activity>
+        <activity
+            android:name=".CalendarViewWithNotesActivitySDK21"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.hugoandrade.calendarviewtest.MainActivity" />
+        </activity>
+        <activity
+            android:name=".CreateEventActivity"
+            android:parentActivityName=".CalendarViewWithNotesActivitySDK21"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.hugoandrade.calendarviewtest.CalendarViewWithNotesActivitySDK21" />
+        </activity>
+        <activity
+            android:name=".SelectDateAndTimeActivity"
+            android:parentActivityName=".CreateEventActivity"
+            android:theme="@style/AppTheme.NoActionBar.Transition">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.hugoandrade.calendarviewtest.CreateEventActivity" />
+        </activity>
+    </application>
+
+</manifest>

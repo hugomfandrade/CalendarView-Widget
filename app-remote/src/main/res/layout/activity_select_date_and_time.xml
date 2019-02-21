@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/v_go_back"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#fff"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="16dp">
+
+            <org.hugoandrade.calendarviewlib.CalendarView
+                android:id="@+id/cv_select_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:current_day_circle_enable="true"
+                app:current_day_circle_color="?attr/colorPrimary"
+                app:month_header_arrows_color="?attr/colorPrimary"
+                app:month_header_text_color="?attr/colorPrimary"
+                app:selected_day_border_color="#00000000"
+                app:week_header_text_color="?attr/colorPrimary"
+                app:week_header_background_color="#00000000"
+                app:week_header_movable="false"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="2dp"
+                android:background="#ccc"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <org.hugoandrade.calendarviewtest.uihelpers.NumberPicker
+                    android:id="@+id/np_hour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:np_wrapSelectorWheel="true"
+                    app:np_textSize="28sp"
+                    app:np_textColor="@color/colorPrimary"
+                    app:np_typeface="sans-serif-light"
+                    app:np_selectedTextSize="32sp"
+                    app:np_selectedTextColor="?attr/colorPrimary"
+                    app:np_selectedTypeface="sans-serif-condensed"
+                    app:np_dividerThickness="0dp"
+                    app:np_min="0"
+                    app:np_max="23"
+                    app:np_formatter="%02d"
+                    app:np_wheelItemCount="5"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:text="@string/double_dots"
+                    android:textColor="?attr/colorPrimary"
+                    android:textSize="28sp" />
+
+                <org.hugoandrade.calendarviewtest.uihelpers.NumberPicker
+                    android:id="@+id/np_minute"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:np_wrapSelectorWheel="true"
+                    app:np_textSize="28sp"
+                    app:np_textColor="@color/colorPrimary"
+                    app:np_typeface="sans-serif-light"
+                    app:np_selectedTextSize="32sp"
+                    app:np_selectedTextColor="?attr/colorPrimary"
+                    app:np_selectedTypeface="sans-serif-condensed"
+                    app:np_dividerThickness="0dp"
+                    app:np_min="0"
+                    app:np_max="59"
+                    app:np_formatter="%02d"
+                    app:np_wheelItemCount="5" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="2dp"
+                android:background="#ccc"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:orientation="horizontal"
+                android:gravity="end">
+
+                <TextView
+                    android:id="@+id/tv_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:text="@string/cancel"
+                    android:textColor="?attr/colorPrimary"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"/>
+
+                <android.support.v4.widget.Space
+                    android:layout_width="40dp"
+                    android:layout_height="0dp" />
+
+                <TextView
+                    android:id="@+id/tv_set"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:text="@string/set"
+                    android:textColor="?attr/colorPrimary"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

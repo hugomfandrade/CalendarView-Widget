@@ -1,1 +1,1 @@
-include ':app', ':CalendarViewLib'
+include ':app', ':app-remote', ':CalendarViewLib'

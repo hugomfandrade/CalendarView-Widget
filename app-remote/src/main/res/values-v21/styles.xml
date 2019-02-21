@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme.NoActionBar.Transition" parent="AppTheme.NoActionBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:windowEnterTransition">@transition/filter_enter</item>
+    </style>
+</resources>
